@@ -1,9 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+
+
 body {
-  color: lightblue;
+  
   font-family: Helvetica, Arial, sans-serif;
 }
 header {
-  background-color: gray;
+  background-color: yellow;
   padding: 25px 30px;
 }
 header h1 {
@@ -29,4 +38,52 @@ header nav ul li a {
   margin: 0 25px;
   font-weight:lighter;
   font-size: 20px;
+}
+
+/* footer section */
+footer {
+  background: lightcyan;
+  padding: 25px 30px;
+  width: 100%;
+}
+footer h3 {
+  color: blue;
+  display: inline;
+  font-size: 24px;
+  margin: 0;
+}
+
+  
+
+footer div ul li {
+  display: inline;
+  float: right;
+  
+}
+footer div ul li a {
+  margin: 0 30px;
+  color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+/* Hero section */
+section {
+  padding: 60px;
+}
+.Hero {
+  background-image: url("../images/hero.jpeg");
+  height: 400px;
+  opacity: 0.7;
+}
+.profile-logo {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  padding-right: 5px;
+}
+.hero-content {
+  color: blue;
+  
 }
