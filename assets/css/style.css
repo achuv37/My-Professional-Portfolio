@@ -1,0 +1,32 @@
+body {
+  color: lightblue;
+  font-family: Helvetica, Arial, sans-serif;
+}
+header {
+  background-color: gray;
+  padding: 25px 30px;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 37px;
+  margin: 0;
+  color: blue;
+  display: inline;
+  
+}
+header a {
+  color: blue;
+  text-decoration: none;
+}
+header nav {
+  float: right;
+  margin: 8px 0px;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 0 25px;
+  font-weight:lighter;
+  font-size: 20px;
+}
