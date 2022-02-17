@@ -1,48 +1,64 @@
+/* Universal selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-
-
-
 body {
   
   font-family: Helvetica, Arial, sans-serif;
+  color: blue;
 }
+/* styling header section */
+
 header {
   background-color: lightgray;
   padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 header h1 {
   font-weight: bold;
-  font-size: 37px;
+  font-size: 36px;
   margin: 0;
   color: blue;
-  display: inline;
   background-color: lightblue;
   margin-left: 0;
   padding: 0 25px;
-  
 }
+
 header a {
   color: blue;
   text-decoration: none;
 }
 header nav {
-  float: right;
-  margin: 8px 0px;
+  
+  margin: 7px 0px;
 }
-header nav ul li {
-  display: inline;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
+
 header nav ul li a {
-  margin: 0 25px;
+  padding: 10px 15px;
   font-weight:lighter;
-  font-size: 20px;
-  border-bottom: 2px solid blue;
-  color: blue;
+  font-size: 1.55vw;
+  text-shadow: 0 0 0 5px rgba(0,0,0,0.5);
+}
+header nav ul li a:hover {
+  background-color: lightcyan;
+  border-radius:15px;
+  text-shadow: none;
 }
 
 /* footer section */
