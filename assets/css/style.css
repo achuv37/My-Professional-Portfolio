@@ -12,22 +12,22 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 header {
-  background-color: gray;
+  background-color: lightgray;
   padding: 25px 30px;
 }
 header h1 {
   font-weight: bold;
   font-size: 37px;
   margin: 0;
-  color: white;
+  color: blue;
   display: inline;
   background-color: lightblue;
   margin-left: 0;
-  padding: 0 50px;
+  padding: 0 25px;
   
 }
 header a {
-  color: white;
+  color: blue;
   text-decoration: none;
 }
 header nav {
@@ -41,7 +41,8 @@ header nav ul li a {
   margin: 0 25px;
   font-weight:lighter;
   font-size: 20px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid blue;
+  color: blue;
 }
 
 /* footer section */
@@ -120,7 +121,7 @@ section {
 
 }
 .introduction {
-  background-color: antiquewhite;
+  background-color: lightcyan;
 }
 .work {
   background-color: lightgray;
