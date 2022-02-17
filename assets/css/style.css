@@ -12,19 +12,22 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 header {
-  background-color: yellow;
+  background-color: gray;
   padding: 25px 30px;
 }
 header h1 {
   font-weight: bold;
   font-size: 37px;
   margin: 0;
-  color: blue;
+  color: white;
   display: inline;
+  background-color: lightblue;
+  margin-left: 0;
+  padding: 0 50px;
   
 }
 header a {
-  color: blue;
+  color: white;
   text-decoration: none;
 }
 header nav {
@@ -38,6 +41,7 @@ header nav ul li a {
   margin: 0 25px;
   font-weight:lighter;
   font-size: 20px;
+  border-bottom: 2px solid white;
 }
 
 /* footer section */
@@ -45,12 +49,14 @@ footer {
   background: lightcyan;
   padding: 25px 30px;
   width: 100%;
+  
 }
 footer h3 {
   color: blue;
   display: inline;
   font-size: 24px;
   margin: 0;
+  
 }
 
   
@@ -65,8 +71,10 @@ footer div ul li a {
   color: blue;
   text-decoration: none;
   font-size: 20px;
+  border-bottom: 2px solid blue;
   
 }
+
 
 /* Hero section */
 section {
@@ -78,12 +86,42 @@ section {
   opacity: 0.7;
 }
 .profile-logo {
-  border-radius: 50px;
+  border-radius: 40px;
   height: 100px;
   width: 100px;
   padding-right: 5px;
+  margin: 50px;
+}
+.profile-name {
+  position: absolute;
+  right: -40px;
+  bottom:-100px;
+  color:white;
+  background-color: lightblue;
+  padding: 10px;
 }
 .hero-content {
   color: blue;
+  position: relative;
   
+}
+
+/* Styling: Main section */
+
+.contents {
+  padding: 25px 30px;
+  color: blue;
+  
+}
+.title {
+  width: 14%;
+  border-right: 10px;
+  border-right: 2px solid darkblue;
+
+}
+.introduction {
+  background-color: antiquewhite;
+}
+.work {
+  background-color: lightgray;
 }
