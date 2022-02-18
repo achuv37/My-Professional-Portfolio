@@ -10,6 +10,9 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: blue;
 }
+p {
+  font-size: 18px;
+}
 /* styling header section */
 
 header {
@@ -54,12 +57,15 @@ header nav ul li a {
   font-weight:lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 0 5px rgba(0,0,0,0.5);
+  text-decoration: underline;
+  
 }
 header nav ul li a:hover {
   background-color: lightcyan;
   border-radius:15px;
   text-shadow: none;
 }
+
 
 /* footer section */
 footer {
@@ -126,14 +132,27 @@ section {
 /* Styling: Main section */
 
 .contents {
-  padding: 25px 30px;
+  padding: 20px 35px;
   color: blue;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
   
 }
 .title {
-  width: 14%;
+  width: 11%;
   border-right: 10px;
-  border-right: 2px solid darkblue;
+  border-right: 3px solid darkblue;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.title h2 {
+  margin-left: 10px;
+  font-size: 26px;
 
 }
 .introduction {
@@ -141,4 +160,9 @@ section {
 }
 .work {
   background-color: lightgray;
+}
+.information {
+  padding-left: 12px;
+  width: 86%;
+  line-height: 1.2;
 }
