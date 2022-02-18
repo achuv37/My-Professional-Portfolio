@@ -13,6 +13,9 @@ body {
 p {
   font-size: 18px;
 }
+section {
+  padding: 60px;
+}
 /* styling header section */
 
 header {
@@ -33,10 +36,10 @@ header h1 {
   font-size: 36px;
   margin: 0;
   color: blue;
-  background-color: lightblue;
+  background-color: lightcyan;
   position: relative;
   right: 30px;
-  padding: 0 30px;
+  padding: 5px 30px;
   
 }
 
@@ -57,11 +60,14 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 10px 15px;
+  padding: 5px;
   font-weight:lighter;
-  font-size: 1.55vw;
+  font-size: 20px;
   text-shadow: 0 0 0 5px rgba(0,0,0,0.5);
-  text-decoration: underline;
+  text-decoration: none;
+  margin: 0 20px;
+  border-bottom: 3px solid blue;
+  
   
 }
 header nav ul li a:hover {
@@ -73,32 +79,41 @@ header nav ul li a:hover {
 
 /* footer section */
 footer {
-  background: lightcyan;
-  padding: 25px 30px;
-  width: 100%;
-  
+  background-color: lightcyan;
 }
-footer h3 {
+
+footer h2 {
   color: blue;
-  display: inline;
+  
   font-size: 24px;
   margin: 0;
+  font-weight: bold;
   
 }
-
-  
-
-footer div ul li {
-  display: inline;
-  float: right;
+footer div {
+  margin: 8px 0;
+  width: 87%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer div ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
   
 }
 footer div ul li a {
-  margin: 0 30px;
+  
   color: blue;
   text-decoration: none;
+  font-weight: lighter;
   font-size: 20px;
-  border-bottom: 2px solid blue;
+  border-bottom: 3px solid blue;
+  padding: 10px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
   
 }
 
@@ -124,7 +139,7 @@ section {
   right: -60px;
   bottom:-100px;
   color:blue;
-  background-color: lightblue;
+  background-color: lightcyan;
   padding: 10px 20px;
 }
 .hero-content {
@@ -164,12 +179,13 @@ section {
 /* Start About-me */
 .introduction {
   background-color: lightcyan;
+  
 }
 
 .information {
   padding-left: 12px;
-  width: 86%;
-  line-height: 1.2;
+  width: 87%;
+  line-height: 1.7;
 }
 /* End About-me */
 
@@ -180,7 +196,7 @@ section {
 }
 
 .project-contents {
-  width: 86%;
+  width: 87%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -192,18 +208,42 @@ section {
   font-weight: bolder;
   position: absolute;
   bottom: 7px;
-  background-color: lightblue;
-  border: 3px solid blue;
+  background-color: lightcyan;
+
 }
 
 .first-project {
   width: 100%;
   position: relative;
   margin: 8px;
+  background-image: url("../images/Runbuddy.png");
   background-size: cover;
+  border: 3px solid lightblue;
 }
 .project {
   position: relative;
   margin: 8px;
-  width: 45%;
+  width: 48%;
+}
+#Horiseon-project {
+  background-image: url(../images/Horiseon.png);
+  background-size: cover;
+  border: 3px solid lightblue;
+}
+#Basic-css {
+  background-image: url(../images/css-practice.jpg);
+  background-size: cover;
+  border: 3px solid lightblue;
+  
+}
+#Basic-html {
+  background-image: url(../images/Musician.png);
+  background-size: cover;
+  border: 3px solid lightblue;
+  
+}
+#Place-holder {
+  background-image: url(../images/placeholder.jpg);
+  background-size: cover;
+  border: 3px solid lightblue;
 }
