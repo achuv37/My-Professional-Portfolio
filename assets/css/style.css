@@ -16,6 +16,7 @@ p {
 /* styling header section */
 
 header {
+  
   background-color: lightgray;
   padding: 25px 30px;
   display: flex;
@@ -33,8 +34,10 @@ header h1 {
   margin: 0;
   color: blue;
   background-color: lightblue;
-  margin-left: 0;
-  padding: 0 25px;
+  position: relative;
+  right: 30px;
+  padding: 0 30px;
+  
 }
 
 header a {
@@ -118,11 +121,11 @@ section {
 }
 .profile-name {
   position: absolute;
-  right: -40px;
+  right: -60px;
   bottom:-100px;
-  color:white;
+  color:blue;
   background-color: lightblue;
-  padding: 10px;
+  padding: 10px 20px;
 }
 .hero-content {
   color: blue;
@@ -131,7 +134,8 @@ section {
 }
 
 /* Styling: Main section */
-
+  
+  /* common for main section */
 .contents {
   padding: 20px 35px;
   color: blue;
@@ -154,16 +158,52 @@ section {
 .title h2 {
   margin-left: 10px;
   font-size: 26px;
-
 }
+/* common styling ends */
+
+/* Start About-me */
 .introduction {
   background-color: lightcyan;
 }
-.work {
-  background-color: lightgray;
-}
+
 .information {
   padding-left: 12px;
   width: 86%;
   line-height: 1.2;
+}
+/* End About-me */
+
+/* Main section :-Projects */
+
+.work {
+  background-color: lightgray;
+}
+
+.project-contents {
+  width: 86%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 600px;
+}
+.project-contents p {
+  color: blue;
+  padding: 5px;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 7px;
+  background-color: lightblue;
+  border: 3px solid blue;
+}
+
+.first-project {
+  width: 100%;
+  position: relative;
+  margin: 8px;
+  background-size: cover;
+}
+.project {
+  position: relative;
+  margin: 8px;
+  width: 45%;
 }
