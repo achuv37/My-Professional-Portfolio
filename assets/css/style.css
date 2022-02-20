@@ -9,9 +9,11 @@ body {
   
   font-family: Helvetica, Arial, sans-serif;
   color: blue;
+  line-height: 1.4;
 }
 p {
   font-size: 18px;
+  
 }
 
 /* styling header section */
@@ -19,7 +21,7 @@ p {
 header {
   
   background-color: lightgray;
-  padding: 25px 30px;
+  padding: 20px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -34,11 +36,7 @@ header h1 {
   font-size: 36px;
   margin: 0;
   color: blue;
-  background-color: lightcyan;
-  position: relative;
-  right: 30px;
-  padding: 5px 30px;
-  
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 header a {
@@ -48,6 +46,7 @@ header a {
 header nav {
   
   margin: 7px 0px;
+  
 }
 header nav ul {
   display: flex;
@@ -58,7 +57,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 5px;
+  padding: 10px 15px;
   font-weight:lighter;
   font-size: 20px;
   text-shadow: 0 0 0 5px rgba(0,0,0,0.5);
@@ -117,33 +116,36 @@ footer div ul li a {
 
 
 /* Hero section */
-section {
-  padding: 60px;
+main {
+  margin-top: 18px;
+  margin-bottom: 40px;
 }
 .Hero {
   background-image: url("../images/hero.jpeg");
-  height: 400px;
-  opacity: 0.7;
-}
-.profile-logo {
-  border-radius: 40px;
-  height: 100px;
-  width: 100px;
-  padding-right: 5px;
-  margin: 50px;
-}
-.profile-name {
-  position: absolute;
-  right: -60px;
-  bottom:-100px;
-  color:blue;
-  background-color: lightcyan;
-  padding: 10px 20px;
-}
-.hero-content {
-  color: blue;
-  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  opacity: 0.7; 
+  padding: 3% 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
   
+}
+.hero div {
+  flex: 0 0 90%;
+  
+}
+.hello {
+  background-color: lightcyan;
+  color: blue;
+  padding: 5px 10px;
+  font-size: 32px;
+  line-height: 1.2;  
+}
+.profile-image {
+  border-radius: 50%;
 }
 
 /* Styling: Main section */
@@ -151,54 +153,43 @@ section {
   /* common for main section */
 .contents {
   padding: 20px 35px;
-  color: blue;
+  background-color: azure;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
   
+  color: blue;
 }
 .title {
-  width: 11%;
-  border-right: 10px;
-  border-right: 3px solid darkblue;
-  padding-right: 15px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
-}
-.title h2 {
-  margin-left: 10px;
-  font-size: 26px;
-}
-/* common styling ends */
+  align-items: center;
+  border-right: 3px solid blue;
+  padding-right: 12px;
+  width: 12%;
+  }
 
-/* Start About-me */
-.introduction {
-  background-color: lightcyan;
+.title > h2 {
+  margin-left: 8px;
+  font-size: 27px;
   
 }
-
-.information {
-  padding-left: 12px;
+.intro {
+  line-height: 1.5;
+  padding-left: 10px;
   width: 87%;
-  line-height: 1.7;
 }
-/* End About-me */
 
 /* Main section :-Projects */
-
-.work-part {
-  background-color: lightgray;
-}
 
 .project-contents {
   width: 87%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 600px;
+  height: 500px;
 }
 .project-contents p {
   color: blue;
@@ -207,22 +198,27 @@ section {
   position: absolute;
   bottom: 7px;
   background-color: lightcyan;
-
-}
-
-.first-project {
-  width: 100%;
-  position: relative;
-  margin: 8px;
-  background-image: url("../images/Runbuddy.png");
-  background-size: cover;
   border: 3px solid lightblue;
 }
 .project {
   position: relative;
-  margin: 8px;
-  width: 48%;
+  width: 47%;
+  margin: 10px;
 }
+
+
+.first-project {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  background-image: url("../images/Runbuddy.png");
+  background-size: cover;
+}
+.project:hover {
+  opacity: 0.5;
+}
+
+
 #Horiseon-project {
   background-image: url(../images/Horiseon.png);
   background-size: cover;
@@ -293,24 +289,17 @@ section {
   footer div ul li {
     margin-top: 15px;  
   }
-  .hero-content {
-    padding-top: 12px;
-    
+  .hero {
+    width: 70%;
+    text-align: center;
   }
   
-  .profile-name {
-    
-    position: relative;
-    left: 180px;
-    bottom: -72px;
-    
-    width: 50%;   
-  }
+   
   .contents {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /*width: 100%;*/
+    
     padding-right: 0; 
     
   }
@@ -338,9 +327,8 @@ section {
   .contact {
     border-top: 3px solid blue;
   }
-  .hero-content {
-    text-align: center;
-  }
+
+  
 }
 
 @media screen and (max-width: 790px) {
@@ -362,15 +350,17 @@ section {
   .title {
     
   }
+  /*
   .profile-name {
     position: relative;
-    bottom: -100px;
+    bottom: -100px;*/
   }
 @media screen and (max-width: 690px) {
   .content {
     display: flex;
     flex-direction: column;
   }
+  /*
   .profile-name {
     position: relative;
     bottom: -80px; 
@@ -378,14 +368,14 @@ section {
     width: 60%;
     
   }
-  
+  */
 }
 @media screen and (max-width: 580px) {
-  .profile-name {
+  /*.profile-name {
     position: relative;
     bottom: -70px;
     left: 120px;
     
     width: 65%;
-  }
+  } */
 }
