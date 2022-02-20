@@ -13,9 +13,7 @@ body {
 p {
   font-size: 18px;
 }
-section {
-  padding: 60px;
-}
+
 /* styling header section */
 
 header {
@@ -246,4 +244,148 @@ section {
   background-image: url(../images/placeholder.jpg);
   background-size: cover;
   border: 3px solid lightblue;
+}
+/* End Of Project Section */
+
+/* Media-query Section */
+
+@media  screen and (max-width: 968px) {
+  
+  header {
+    padding: 0;
+    justify-content: center;
+    position: relative;
+    
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    border: 0;
+    position: static;
+     
+  }
+  header nav ul  {
+    margin-top: 20px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  header nav ul li {
+    margin: 3px;
+    
+  }
+ 
+  header nav ul li a {
+    font-size: 18px;
+  
+  }
+  footer div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+  }
+  
+
+  footer div ul li {
+    margin-top: 15px;  
+  }
+  .hero-content {
+    padding-top: 12px;
+    
+  }
+  
+  .profile-name {
+    
+    position: relative;
+    left: 180px;
+    bottom: -72px;
+    
+    width: 50%;   
+  }
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*width: 100%;*/
+    padding-right: 0; 
+    
+  }
+  .title {
+    width: fit-content;
+    border: 0; 
+    
+  }
+  .title h2 > br {
+    display: none;
+  }
+  .information {
+    border-top: 3px solid blue;
+    margin-top: 10px; 
+    padding-top: 5px; 
+  } 
+  .project-contents {
+    border-top: 3px solid blue;
+    margin: 10px;
+  } 
+
+  .project {
+    width: 100%;
+  }
+  .contact {
+    border-top: 3px solid blue;
+  }
+  .hero-content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  section {
+    padding: 30px 15px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .title {
+    
+  }
+  .profile-name {
+    position: relative;
+    bottom: -100px;
+  }
+@media screen and (max-width: 690px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-name {
+    position: relative;
+    bottom: -80px; 
+    left: 120px;
+    width: 60%;
+    
+  }
+  
+}
+@media screen and (max-width: 580px) {
+  .profile-name {
+    position: relative;
+    bottom: -70px;
+    left: 120px;
+    
+    width: 65%;
+  }
 }
