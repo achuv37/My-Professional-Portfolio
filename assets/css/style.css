@@ -39,9 +39,9 @@ header h1 {
   background-color: lightcyan;
   position: relative;
   left: -35px;
-  padding: 5px 0px 5px 80px;
+  padding: 5px 0px 5px 90px;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  width: 22%;
+  width: 26%;
 }
 
 header a {
@@ -62,7 +62,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 10px 15px;
+  padding: 10px;
   font-weight:lighter;
   font-size: 20px;
   text-shadow: 0 0 0 5px rgba(0,0,0,0.5);
@@ -130,7 +130,7 @@ footer div ul li a:hover {
   background-size: cover;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 400px;
   opacity: 0.7; 
   padding: 25px 30px;
   display: flex;
@@ -139,20 +139,27 @@ footer div ul li a:hover {
 }
 .hero div {
   text-align: center;
-  padding:  80px 60px;
+  padding:  60px 60px;
+  position: relative;
 }
 
 .hello {
   background-color: lightcyan;
   color: blue;
   margin-bottom: 10px;
-  padding:  5px 10px;
+  padding: 5px;
   font-size: 22px;
-  line-height: 1;
-  width: 50%;
+  line-height: 1.5;
+  position: absolute;
+  right: -350px;
+  bottom: -10px;
+  width: 100%;
+
+  
 }
 .profile-image {
   border-radius: 40%;
+  
   
 }
 
@@ -261,15 +268,16 @@ footer div ul li a:hover {
     padding: 0;
     justify-content: center;
     position: relative;
+    margin: 0;
     
   }
   header h1 {
     width: 100%;
     text-align: center;
-    margin-right: 0;
-    border: 0;
+    margin: 0;
     position: static;
-     
+    border: 0;
+    padding-left: 0; 
   }
   header nav ul  {
     margin-top: 20px;
@@ -294,12 +302,19 @@ footer div ul li a:hover {
     flex-direction: column;
     align-items: flex-start;  
   }
-  
 
   footer div ul li {
     margin-top: 15px;  
   }
-  
+  .hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hello {
+    position: static;
+  }
    
   .contents {
     display: flex;
