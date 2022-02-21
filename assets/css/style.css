@@ -21,7 +21,7 @@ p {
 header {
   
   background-color: lightgray;
-  padding: 20px 35px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -34,9 +34,14 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  margin: 0;
+  margin: 5px;
   color: blue;
+  background-color: lightcyan;
+  position: relative;
+  left: -35px;
+  padding: 5px 5px 5px 40px;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  width: 22%;
 }
 
 header a {
@@ -74,10 +79,7 @@ header nav ul li a:hover {
 }
 
 
-/* footer section */
-footer {
-  background-color: lightcyan;
-}
+/* footer section */  
 
 footer h2 {
   color: blue;
@@ -113,36 +115,37 @@ footer div ul li a {
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
   
 }
+footer div ul li a:hover {
+  background-color: lightcyan;
+  border-radius:15px;
+  text-shadow: none;
+}
+
 
 
 /* Hero section */
-main {
-  margin-top: 18px;
-  margin-bottom: 40px;
-}
-.Hero {
+
+.hero {
   background-image: url("../images/hero.jpeg");
   background-size: cover;
   background-position: center;
   height: 40vh;
   opacity: 0.7; 
   padding: 3% 5%;
-  display: flex;
+  /*display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  text-align: right;
+  text-align: right; */
   
 }
-.hero div {
-  flex: 0 0 90%;
-  
-}
+
 .hello {
   background-color: lightcyan;
   color: blue;
   padding: 5px 10px;
-  font-size: 32px;
-  line-height: 1.2;  
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: right;  
 }
 .profile-image {
   border-radius: 50%;
@@ -153,7 +156,7 @@ main {
   /* common for main section */
 .contents {
   padding: 20px 35px;
-  background-color: azure;
+  background-color: white;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -166,7 +169,7 @@ main {
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
-  border-right: 3px solid blue;
+  border-right: 4px solid blue;
   padding-right: 12px;
   width: 12%;
   }
@@ -189,7 +192,7 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 500px;
+  height: 600px;
 }
 .project-contents p {
   color: blue;
@@ -198,11 +201,11 @@ main {
   position: absolute;
   bottom: 7px;
   background-color: lightcyan;
-  border: 3px solid lightblue;
+  border: 3px solid gray;
 }
 .project {
   position: relative;
-  width: 47%;
+  width: 48%;
   margin: 10px;
 }
 
@@ -213,6 +216,7 @@ main {
   margin: 10px;
   background-image: url("../images/Runbuddy.png");
   background-size: cover;
+  border: 4px solid gray;
 }
 .project:hover {
   opacity: 0.5;
@@ -222,24 +226,24 @@ main {
 #Horiseon-project {
   background-image: url(../images/Horiseon.png);
   background-size: cover;
-  border: 3px solid lightblue;
+  border: 4px solid gray;
 }
 #Basic-css {
   background-image: url(../images/css-practice.jpg);
   background-size: cover;
-  border: 3px solid lightblue;
+  border: 4px solid gray;
   
 }
 #Basic-html {
   background-image: url(../images/Musician.png);
   background-size: cover;
-  border: 3px solid lightblue;
+  border: 4px solid gray;
   
 }
 #Place-holder {
   background-image: url(../images/placeholder.jpg);
   background-size: cover;
-  border: 3px solid lightblue;
+  border: 4px solid gray;
 }
 /* End Of Project Section */
 
@@ -276,7 +280,7 @@ main {
   }
  
   header nav ul li a {
-    font-size: 18px;
+    font-size: 20px;
   
   }
   footer div ul {
@@ -289,16 +293,13 @@ main {
   footer div ul li {
     margin-top: 15px;  
   }
-  .hero {
-    width: 70%;
-    text-align: center;
-  }
   
    
   .contents {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    
+    flex: 0 0 100%;
     
     padding-right: 0; 
     
@@ -311,7 +312,7 @@ main {
   .title h2 > br {
     display: none;
   }
-  .information {
+  .intro {
     border-top: 3px solid blue;
     margin-top: 10px; 
     padding-top: 5px; 
@@ -350,32 +351,14 @@ main {
   .title {
     
   }
-  /*
-  .profile-name {
-    position: relative;
-    bottom: -100px;*/
+  
   }
 @media screen and (max-width: 690px) {
   .content {
     display: flex;
     flex-direction: column;
   }
-  /*
-  .profile-name {
-    position: relative;
-    bottom: -80px; 
-    left: 120px;
-    width: 60%;
-    
-  }
-  */
+  
 }
 @media screen and (max-width: 580px) {
-  /*.profile-name {
-    position: relative;
-    bottom: -70px;
-    left: 120px;
-    
-    width: 65%;
-  } */
 }
