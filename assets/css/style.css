@@ -236,7 +236,7 @@ footer div ul li a:hover {
   position: relative;
   width: 100%;
   margin: 10px;
-  background-image: url("../images/Runbuddy.png");
+  background-image: url("../images/beers.PNG");
   background-size: cover;
   border: 4px solid var(--tertiary-color);
 }
@@ -263,7 +263,7 @@ footer div ul li a:hover {
   
 }
 #project-01 {
-  background-image: url(../images/beers.PNG);
+  background-image: url(../images/Runbuddy.png);
   background-size: cover;
   border: 4px solid var(--tertiary-color);
 }
