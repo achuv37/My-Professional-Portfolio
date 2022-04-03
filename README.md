@@ -17,10 +17,7 @@
 https://achuv37.github.io/My-Professional-Portfolio/
 
 # Image of the deployed application
-
-![Professional_Page](https://user-images.githubusercontent.com/93412486/155644604-7e31fdc7-8ce9-4174-bde2-47bac7290328.jpg)
-![Professional_Page_Expanded](https://user-images.githubusercontent.com/93412486/155644611-3c5e94f3-ad55-45cb-a845-132bf9b05e9b.jpg)
-
+![project](https://user-images.githubusercontent.com/93412486/161405853-95652e01-a3f6-42c3-9f37-da7c3e5739e1.PNG)
 # Contribution
 by [Aswathy]
 
