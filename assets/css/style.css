@@ -167,7 +167,8 @@ footer div ul li a:hover {
   width: 100%;
 }
 .profile-image {
-  border-radius: 40%;
+  border-radius: 10%;
+  width: 60%
 }
 /* Styling: Main section */
 
@@ -245,8 +246,8 @@ footer div ul li a:hover {
 }
 
 
-#Horiseon-project {
-  background-image: url(../images/Horiseon.png);
+#techblog {
+  background-image: url(../images/techblog.PNG);
   background-size: cover;
   border: 4px solid var(--tertiary-color);
 }
